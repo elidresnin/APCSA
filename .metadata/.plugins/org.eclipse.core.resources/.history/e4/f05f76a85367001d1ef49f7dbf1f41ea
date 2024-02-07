@@ -1,0 +1,19 @@
+import java.util.*;
+public class NewWaveMain {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		Employee[] employees = new Employee[10];
+		String[] names = {"Peter Gibbons", "Joanna", "Michael Bolton", "Samir Nagheenanajar", "Lawerence", "Milton Waddoams", "Bill Lumbergh", "Tom Smykowski", "Bob Slydell", "Bob Porter"};
+		int[] salarys = {54000, 26000, 63000, 32000, 23000, 0, 1200000, 62000, 75000, 72000};
+		
+		for(int i = 0; i < employees.length; i++) {
+			employees[i] = new Employee(names[i], salarys[i]);
+		}
+		
+		System.out.println(Arrays.toString(employees));
+		
+		
+	}
+
+}

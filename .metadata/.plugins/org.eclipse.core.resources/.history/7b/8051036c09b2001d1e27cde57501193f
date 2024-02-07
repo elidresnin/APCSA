@@ -1,0 +1,18 @@
+
+public class NewWaveMain {
+	
+	public static String newWAveCAse(String input) {
+		String output = "";
+		
+		for(int i = 0; i < input.length(); i++) {
+			System.out.println(input.charAt(i));
+			
+		}
+		return output;
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(;newWAveCAse("newWaveComputer"));
+	}
+}

@@ -1,0 +1,45 @@
+// class: Employee
+// written by: Eli Dresnin
+// date: Nov 18, 2022
+// description: Empolyee object for New Wave Arrays project
+public class Employee implements Comparable<Employee>{
+	private String name;
+	private double salary;
+	
+	public Employee(String name, double salary) {
+		this.name = name;
+		this.salary = salary;
+		
+	}
+	public Employee() {
+		this(" " , 0.0);
+	}
+	
+	public String toString() {
+		return "Employee [name=" + name + ", salary=" + salary + "]";
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
+	// method name: compareTo
+	// description: Uses comparable interface to sort array of empolyees by salary. 
+	// parameters: 
+	// return: 
+	public int compareTo(Employee o) {
+		return (int) (this.salary+o.salary);	
+        
+	}
+	
+	
+
+}

@@ -1,0 +1,55 @@
+
+public class NewWaveMain {
+	
+	public static String camelCase(String input) {
+		String output = "";
+		
+		for(int i = 0; i < input.length(); i++) {
+			output += input.charAt(i);
+			if(Character.isUpperCase(input.charAt(i)) && i < input.length() - 1 && !Character.isUpperCase(input.charAt(i+1)) ) {
+				output +=  Character.toUpperCase(input.charAt(i+1));
+				i++;
+			}
+
+			
+		}
+		return output;
+	}
+	
+	public static String upperCamelCase(String input) {
+		String output = "";
+		
+		output +=  Character.toLowerCase(input.charAt(0));
+		for(int i = 1; i < input.length(); i++) {
+			
+			output += input.charAt(i);
+			if(Character.isUpperCase(input.charAt(i)) && i < input.length() - 1 && !Character.isUpperCase(input.charAt(i+1)) ) {
+				output +=  Character.toUpperCase(input.charAt(i+1));
+				i++;
+			}
+
+			
+		}
+		return output;
+	}
+	
+	public static String potHoleCase(String input) {
+		String output = "";
+		
+		for(int i = 0; i < input.length(); i++) {
+		
+			if(input.charAt(i) == '_' && !(input.charAt(i) == '_')) {
+				output += input.charAt(i+1);
+				i++;
+			}
+
+			
+		}
+		return output;
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(potHoleCase("NewWaveComputers"));
+	}
+}

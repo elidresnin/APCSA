@@ -1,0 +1,15 @@
+
+public class ExampleMain {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Example e = new Example(19, "Joe");
+		System.out.println(Example.NUMBEROFFRIENDS);
+		System.out.println(e.getName());
+		System.out.println(e);
+		e.setName("andrew");
+		System.out.println(e.getName());
+	}
+
+}
+
+

@@ -1,0 +1,16 @@
+
+public class InheritanceMain {
+
+	public static void main(String[] args) {
+		Square s = new Square();
+		Rectangle r = new Rectangle();
+		
+		Square s2 = new Rectangle();
+		
+	
+		
+		System.out.println(s2);
+		System.out.println(r);
+	}
+
+}

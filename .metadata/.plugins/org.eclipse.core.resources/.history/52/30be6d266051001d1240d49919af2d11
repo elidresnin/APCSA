@@ -1,0 +1,44 @@
+import java.util.*;
+public class StaticMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		System.out.println("Please enter the 3 sides of your triangle");
+		double s1 = s.nextDouble();
+		double s2 = s.nextDouble();
+		double s3 = s.nextDouble();
+		if(Triangle.acuteTriangle(s1, s2, s3) && Triangle.scaleneTriangle(s1, s2, s3) && Triangle.areTriangular(s1, s2, s3)) {
+			System.out.println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a acute scalene triangle");
+		}
+		else if(Triangle.(s1, s2, s3) && Triangle.(s1, s2, s3)&& Triangle.(s1, s2, s3)) {
+			System..println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a acute isosceles triangle");
+		}
+		else if(Triangle.(s1, s2, s3) && Triangle.(s1, s2, s3)&& Triangle.(s1, s2, s3)) {
+			System..println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a acute equilateral triangle");
+		}
+		else if(Triangle.(s1, s2, s3) && Triangle.(s1, s2, s3)&& Triangle.(s1, s2, s3)) {
+			System..println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a obtuse scalene triangle");
+		}
+		else if(Triangle.(s1, s2, s3) && Triangle.(s1, s2, s3)&& Triangle.(s1, s2, s3)) {
+			System..println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a obtuse isosceles triangle");
+		}
+		else if(Triangle.(s1, s2, s3) && Triangle.(s1, s2, s3)&& Triangle.(s1, s2, s3)) {
+			System..println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a obtuse equilateral triangle");
+		}
+		else if(Triangle.(s1, s2, s3) && Triangle.(s1, s2, s3)&& Triangle.(s1, s2, s3)) {
+			System..println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a right scalene triangle");
+		}
+		else if(Triangle.(s1, s2, s3) && Triangle.(s1, s2, s3)&& Triangle.(s1, s2, s3)) {
+			System..println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a right isosceles triangle");
+		}
+		else if(Triangle.(s1, s2, s3) && Triangle.(s1, s2, s3)&& Triangle.(s1, s2, s3)) {
+			System..println("A triangle with side lengths " + s1 + ", " + s2 + " and " + s3 + " is a right equilateral triangle");
+		}
+		else {
+			System..println("These lengths cannot form a triangle");
+		}
+	
+	}
+
+}

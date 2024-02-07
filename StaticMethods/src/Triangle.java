@@ -1,0 +1,79 @@
+// class: Triangle
+// written by: Eli Dresnin
+// date: Oct 21, 2022
+// description: static methods project
+public class Triangle {
+	
+	
+	// method name: areTriangular
+	// description: tests 3 side to see if they will form a triangle
+	// parameters: double side1, side2, side3
+	// return: boolean - returns true if sides would form a triangle
+	public static boolean areTriangular(double side1, double side2, double side3) {
+		return (side1 + side2 > side3 && side1 + side3 > side2 && side1 + side3 > side2);
+	}
+	// method name: acuteTriangle
+	// description: test to see if a triangle is acute
+	// parameters: double side1, double side2, double side3
+	// return: boolean - returns true if sides would form an acute triangle
+	public static boolean acuteTriangle(double side1, double side2, double side3) {
+		if(side1 * side1 + side2 * side2 > side3 * side3 && side2 *side2 * side3 *side3 > side1 * side1 && side1 * side1 + side3 * side3 > side2 * side2) {
+			return true;
+		}
+		return false;
+	}
+	
+	// method name: rightTriangle
+	// description: test to see if a triangle is a right triangle
+	// parameters: double side1, double side2, double side3
+	// return: boolean - returns true if sides would form a right triangle
+	public static boolean rightTriangle(double side1, double side2, double side3) {
+		if(side1 * side1 + side2 * side2== side3 * side3  ||  side2 * side2 + side3 * side3 == side1 * side1  ||  side1 * side1 + side3 * side3 == side2 * side2 ) {
+			return true;
+		}
+		return false;
+	}
+	
+	// method name: obtuseTriangle 
+	// description: test to see if a triangle is obtuse
+	// parameters: double side1, double side2, double side3
+	// return: boolean - returns true if sides would form an obtuse triangle
+	public static boolean obtuseTriangle(double side1, double side2, double side3) {
+		if(Triangle.acuteTriangle(side1, side2, side3) == false && Triangle.rightTriangle(side1, side2, side3) == false) {
+			return true;
+		}
+		return false;
+	}
+	
+	// method name: scaleneTriangle 
+	// description: test to see if a triangle is scalene
+	// parameters: double side1, double side2, double side3
+	// return: boolean - returns true if sides would form an scalene triangle
+	public static boolean scaleneTriangle(double side1, double side2, double side3) {
+		if(side1!= side2 && side2 != side3 && side1 !=  side3) {
+			return true;
+		}
+		return false;
+	}
+	// method name: isoscelesTriangle
+	// description: test to see if a triangle is isosceles
+	// parameters: double side1, double side2, double side3
+	// return: boolean - returns true if sides would form an isosceles triangle
+	public static boolean isoscelesTriangle(double side1, double side2, double side3) {
+		if((side1 == side2 || side2 == side3 || side1 == side3) && Triangle.equilateralTriangle(side1, side2, side3) == false) {
+			return true;
+		}
+		return false;
+	}
+	// method name: equilateralTriangle
+	// description: test to see if a triangle is an equilateral triangle
+	// parameters: double side1, double side2, double side3
+	// return: returns true if sides would form an equilateral triangle
+	public static boolean equilateralTriangle(double side1, double side2, double side3) {
+		if(side1 == side2 && side2 == side3) {
+			return true;
+		}
+		return false;
+	}
+	
+}
